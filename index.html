@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Riot js</title>
+    <script src="/blog.css"></script>
+  </head>
+  <body>
+    <h1>Riot!</h1>
+    <hello-blog></hello-blog>
+
+    <!-- <hello-world greet="Bes"></hello-world>
+    <hello-world greet="Ines"></hello-world>
+    <hello-world></hello-world>
+    <hello-form></hello-form> -->
+    <script src="bower_components/riot/riot.min.js"></script>
+    <script src="tags/all.js"></script>
+    <script>
+      var blogs = [{title: "DWYL", author: "Nelson", text:"Do What You Love"}, {title: "F&C", author: "Dan", text:"Does What He Loves"}]
+      riot.mount('hello-blog', {blogs: blogs})
+      // riot.mount('hello-world', {greet:"Izaak"})
+      // riot.mount('hello-form')
+    </script>
+  </body>
+</html>
